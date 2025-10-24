@@ -1,0 +1,55 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "shift shift": "file_finder::Toggle"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "shift-k": "editor::Hover",
+      "space l a": "editor::ToggleCodeActions",
+      "space l f": "editor::Format",
+      "space l r": "editor::Rename",
+      "space l d": "diagnostics::DeployCurrentFile",
+      "/": "buffer_search::Deploy",
+      "space f": "file_finder::Toggle",
+      "space s": "pane::DeploySearch",
+      "space o": "tab_switcher::ToggleAll",
+      "space e": "workspace::ToggleLeftDock",
+      "space p": "outline::Toggle",
+      "space v": "editor::GoToDefinitionSplit",
+      "space /": "editor::ToggleComments",
+      "g r": "editor::FindAllReferences",
+      "[ f": "vim::PreviousMethodStart",
+      "] f": "vim::NextMethodStart"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      //
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting && !menu",
+    "bindings": {
+      "shift-j": "editor::MoveLineDown",
+      "shift-k": "editor::MoveLineUp"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j j": "vim::NormalBefore"
+    }
+  }
+]
