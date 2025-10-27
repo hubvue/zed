@@ -9,13 +9,23 @@
   {
     "context": "Workspace",
     "bindings": {
-      "shift shift": "file_finder::Toggle",
       "ctrl-'": "terminal_panel::Toggle"
+    }
+  },
+  {
+    "context": "Workspace && !Editor",
+    "bindings": {
+      "space f": "file_finder::Toggle",
+      "space n": "workspace::NewFile",
+      "space q": "workspace::CloseWindow"
     }
   },
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
+      "space n": "workspace::NewFile",
+      "space w": "workspace::Save",
+      "space q": "pane::CloseActiveItem",
       "shift-k": "editor::Hover",
       "space l a": "editor::ToggleCodeActions",
       "space l f": "editor::Format",
@@ -51,6 +61,12 @@
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       "j j": "vim::NormalBefore"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl-t ctrl-n": "workspace::NewTerminal"
     }
   }
 ]

@@ -12,7 +12,8 @@
     "html": true,
     "material-icon-theme": true,
     "toml": true,
-    "vitesse": true
+    "vitesse": true,
+    "sql": true
   },
   // ----系统----
   "auto_update": true,
