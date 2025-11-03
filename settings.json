@@ -8,6 +8,9 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // ----其他----
+  "edit_predictions": {
+    "mode": "subtle"
+  },
   "auto_install_extensions": {
     "html": true,
     "material-icon-theme": true,
@@ -26,7 +29,7 @@
   "buffer_font_family": "0xProto Nerd Font",
   "buffer_font_size": 16,
   "ui_font_size": 16,
-  "tab_size": 2,
+  "tab_size": 4,
   // ----界面----
   "theme": {
     "mode": "system",
