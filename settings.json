@@ -12,7 +12,7 @@
     "html": true,
     "material-icon-theme": true,
     "toml": true,
-    "vitesse": true,
+    "everforest-theme": true,
     "sql": true
   },
   // ----系统----
@@ -28,11 +28,7 @@
   "ui_font_size": 16,
   "tab_size": 4,
   // ----界面----
-  "theme": {
-    "mode": "system",
-    "light": "One Light",
-    "dark": "Everforest Dark Hard"
-  },
+  "theme": "Everforest Dark Hard",
   "icon_theme": "Material Icon Theme",
   "relative_line_numbers": true,
   "tab_bar": {
