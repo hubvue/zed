@@ -8,6 +8,11 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   // ----其他----
+  "languages": {
+    "Rust": {
+      "show_edit_predictions": true
+    }
+  },
   "edit_predictions": {
     "mode": "subtle"
   },
